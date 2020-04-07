@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import zhengWenHao from '@/components/zhengwenhao'
+import Zoom from '@/components/Zoom'
 Vue.use(Router)
 
 export default new Router({
@@ -15,6 +16,12 @@ export default new Router({
       path: '/home',
       name: 'zhengWenHao',
       component: zhengWenHao
+    }
+    ,
+    {
+      path: '/zoon',
+      name: 'Zoom',
+      component: Zoom
     }
   ]
 })

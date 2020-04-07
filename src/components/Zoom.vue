@@ -1,13 +1,18 @@
 <template>
   <div>
-    <el-button @click="show = !show">Click Me</el-button>
+    <el-button @click="show2 = !show2">Click Me</el-button>
 
     <div style="display: flex; margin-top: 20px; height: 100px;">
-      <transition name="el-fade-in-linear">
-        <div v-show="show" class="transition-box">.el-fade-in-linear</div>
+      <transition name="el-zoom-in-center">
+        <div v-show="show2" class="transition-box">.el-zoom-in-center</div>
       </transition>
-      <transition name="el-fade-in">
-        <div v-show="show" class="transition-box">.el-fade-in</div>
+
+      <transition name="el-zoom-in-top">
+        <div v-show="show2" class="transition-box">.el-zoom-in-top</div>
+      </transition>
+
+      <transition name="el-zoom-in-bottom">
+        <div v-show="show2" class="transition-box">.el-zoom-in-bottom</div>
       </transition>
     </div>
   </div>
@@ -16,7 +21,7 @@
 <script>
     export default {
     data: () => ({
-      show: true
+      show2: true
     })
   }
 </script>
