@@ -1,5 +1,6 @@
 <template>
   <div>
+    <el-button type="primary">按钮一个</el-button>
     <el-button @click="show = !show">Click Me</el-button>
 
     <div style="display: flex; margin-top: 20px; height: 100px;">

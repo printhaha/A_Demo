@@ -3,8 +3,8 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import zhengWenHao from '@/components/zhengwenhao'
 import Zoom from '@/components/Zoom'
+import Layout from '@/components/layout'
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
@@ -19,9 +19,15 @@ export default new Router({
     }
     ,
     {
-      path: '/zoon',
+      path: '/zoom',
       name: 'Zoom',
       component: Zoom
+    }
+    ,
+    {
+      path: '/layout',
+      name: 'Layout',
+      component: Layout
     }
   ]
 })
